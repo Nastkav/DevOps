@@ -75,5 +75,5 @@ jobs:
          run: docker network create my_network
        - name: Run image
          run: docker run --network my_network -p 80:80 --network-alias my_app -d ${{ secrets.DOCKER_USERNAME }}/docker_app
-       - name: Run container and check
-         run: docker run -d -p 80:80 -m 1g --cpus="1" --name docker_app --rm nstsn/docker_app:latest && sleep 60 && curl -v localhost
+       - name: Curl
+         run: curl localhost:80/home;
