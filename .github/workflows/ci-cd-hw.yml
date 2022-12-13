@@ -70,3 +70,5 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
        - name: Pull Docker image
          run: docker pull ${{ secrets.DOCKER_USERNAME }}/docker_app:latest
+       - name: Create a network
+         run: docker network create my_network
