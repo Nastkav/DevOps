@@ -75,5 +75,3 @@ jobs:
          run: docker network create my_network
        - name: Run image
          run: docker run --network my_network -p 80:80 --network-alias my_app -d ${{ secrets.DOCKER_USERNAME }}/docker_app
-       - name: Curl
-         run: curl -f http://127.0.0.1:80
