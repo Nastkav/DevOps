@@ -17,10 +17,10 @@ jobs:
          uses: actions/setup-node@v2
          with:
           node-version: ${{ env.NODE_VERSION }}
-       - name: Install packages
-         run: npm ci
+       - name: Install eslint
+         run: npm i eslint
        - name: Eslint checks
-         run: npm run lint
+         run: node_modules/eslint/bin/eslint.js 
        
    build-image:
    
