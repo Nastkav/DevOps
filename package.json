@@ -1,0 +1,16 @@
+{
+  "name": "docker_app",
+  "version": "1.0.0",
+  "description": "node.js on docker",
+  "author": "Anastasia Skachkova",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  }
+}
