@@ -5,6 +5,9 @@ on:
   push:
      branches:
          - main
+  pull_request:
+     branches: 
+         - main
 
 
 jobs:
@@ -47,4 +50,4 @@ jobs:
          uses: docker/login-action@v2
          with:
           username: nstsn
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
