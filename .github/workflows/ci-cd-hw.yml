@@ -56,5 +56,5 @@ jobs:
          uses: docker/build-push-action@v3
          with:
             context: .
-            tags: ${{secrets.DOCKERHUB_USERNAME}}/docker_app:v1
+            tags: ${{secrets.DOCKER_USERNAME}}/docker_app:v1
             push: true
