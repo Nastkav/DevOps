@@ -32,8 +32,6 @@ metadata:
     env: prod
     owner: AnSk
 spec:
-  externalIPs:
-    - 173.172.171.71
   selector:
     project: gksb # обираємо Pods з цим label
   ports:
